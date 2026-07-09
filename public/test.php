@@ -6,23 +6,20 @@ session_start();
 $page = $_GET["page"] ?? "accueil";
 $settings = $_GET["settings"] ?? null;
 $idUser = $_GET["settings"] ?? 1;
-$user = {
-    "idUser" : $idUser,
-    "name" : "Luc",
-    "email" : "luc@luc.ch",
-    "firstName" : "Bo",
-    "password" : "123",
-    "startYaer" : 2025,
-    "isAdmin" : false
-}
+$user = [
+    "idUser" => $idUser,
+    "name" => "Luc",
+    "email" => "luc@luc.ch",
+    "firstName" => "Bo",
+    "password" => "123",
+    "startYear" => 2025,
+    "isAdmin" => false,
+];
 
 if ($user["isAdmin"]) {
     require_once __DIR__ . "/header_formateur.php";
-    break;
-}
-else {
-    require_once __DIR__ . "/header_apprentis.php";
-    break;
+} else {
+    require_once __DIR__ . "/header_apprenti.php";
 }
 
 switch ($page) {
@@ -42,9 +39,8 @@ switch ($page) {
         if ($user["isAdmin"]) {
             require_once __DIR__ . "/cour_formateur.php";
             break;
-        }
-        else {
-            require_once __DIR__ . "/cour_apprentis.php";
+        } else {
+            require_once __DIR__ . "/cour_apprenti.php";
             break;
         }
     case "journal":
