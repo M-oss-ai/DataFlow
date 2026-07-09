@@ -8,12 +8,12 @@
   <body>
     <header class="entete">
       <div>
-        <a href="Accueil_Apprenti.html" class="menu">Accueil</a>
-        <a href="Modules.html" class="menu">les Modules</a>
-        <a href="Cours.html" class="menu">les Cours</a>
+        <a href="/test.php?page=journal" class="menu">Accueil</a>
+        <a href="/test.php?page=module" class="menu">les Modules</a>
+        <a href="/test.php?page=cour_apprenti" class="menu">les Cours</a>
       </div>
       <div>
-        Nom, prénom
+        <p><?= $user["name"] ?></p>
         <a href="#" class="menu">Se déconnecter</a>
       </div>
     </header>
