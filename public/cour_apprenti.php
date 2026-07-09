@@ -14,19 +14,15 @@
         <a href="/test.php?page=cour" class="menu">les Cours</a>
       </div>
       <div>
-        <p><?= $user["name"] ?></p>
+        <?= $user["name"] ?>
         <a href="#" class="menu">Se déconnecter</a>
       </div>
     </header>
     <content>
-      <p class="titre" style="margin-top: 100px">les Modules</p>
+      <p class="titre" style="margin-top: 100px">les Cours</p>
       <div class="choix">
-        <label for="Site">Site :</label>
-        <select id="Site" name="Site">
-          <option value="Tout">Tout</option>
-          <option value="Bienne">Bienne</option>
-          <option value="Genève">Genève</option>
-        </select>
+        <label for="Soutien">Soutien</label>
+        <input type="radio" id="Soutien" name="Soutien" value="Soutien" />
         <label for="Type">Type :</label>
         <select id="Type" name="Type">
           <option value="Tout">Tout</option>
