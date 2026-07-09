@@ -1,0 +1,41 @@
+.entete {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+}
+.menu {
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: rgb(233, 207, 5);
+  padding: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.titre {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.texte {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.choix {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
