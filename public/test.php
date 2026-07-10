@@ -39,7 +39,12 @@ switch ($page) {
             break;
         }
     case "module":
-        require_once __DIR__ . "/module.php";
-        break;
+        if ($user["isAdmin"]) {
+            require_once __DIR__ . "/module_formateur.php";
+            break;
+        } else {
+            require_once __DIR__ . "/module_apprenti.php";
+            break;
+        }
 }
 ?>
