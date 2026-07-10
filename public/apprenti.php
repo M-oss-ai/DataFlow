@@ -1,6 +1,6 @@
 <!doctype html>
     <content>
-      <p class="titre" style="margin-top: 100px">les Modules</p>
+      <p class="titre" style="margin-top: 100px">les Apprentis</p>
       <div class="choix">
         <label for="Site">Site :</label>
         <select id="Site" name="Site">
