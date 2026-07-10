@@ -1,9 +1,9 @@
 <?php
 
-$host = "127.0.0.1"; // adresse du serveur MySQL
+$host = "mariadb"; // adresse du serveur MySQL
 $dbname = "time-tracking"; // nom de la base
 $user = "root"; // utilisateur MySQL
-$pass = "1234"; // mot de passe MySQL
+$pass = "test"; // mot de passe MySQL
 $charset = "utf8mb4";
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
@@ -18,5 +18,5 @@ try {
     $pdo = new PDO($dsn, $user, $pass, $options);
     return $pdo;
 } catch (PDOException $e) {
-    $pdo = null;
+    echo "error SQL : " .  $e;
 }

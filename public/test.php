@@ -6,13 +6,22 @@ $settings = $_GET["settings"] ?? null;
 $idUser = $_GET["idUser"] ?? 1;
 
 require_once __DIR__ . "/db.php";
-require_once __DIR__ . "/function.php";
+require_once __DIR__ . "/fonction.php";
 
 $user = getUserById($pdo, $idUser);
-
 require_once __DIR__ . "/header.php";
 
 switch ($page) {
+    case "add_course":
+        if ($user["isAdmin"]) {
+            require_once __DIR__ . "/add_course.php";
+            break;
+        }
+    case "add_module":
+        if ($user["isAdmin"]) {
+            require_once __DIR__ . "/add_module.php";
+            break;
+        }
     case "accueil":
         if ($user["isAdmin"]) {
             require_once __DIR__ . "/apprenti.php";
@@ -30,12 +39,7 @@ switch ($page) {
             break;
         }
     case "module":
-        if ($user["isAdmin"]) {
-            require_once __DIR__ . "/module_formateur.php";
-            break;
-        } else {
-            require_once __DIR__ . "/module_apprenti.php";
-            break;
-        }
+        require_once __DIR__ . "/module.php";
+        break;
 }
 ?>

@@ -8,15 +8,9 @@
   <body>
     <header class="entete">
       <div>
-        <a href="test.php?page=accueil&idUser=<?= $user[
-            "idUser"
-        ] ?>" class="menu">Accueil</a>
-        <a href="test.php?page=module&idUser=<?= $user[
-            "idUser"
-        ] ?>" class="menu">les Modules</a>
-        <a href="test.php?page=cour&idUser=<?= $user[
-            "idUser"
-        ] ?>" class="menu">les Cours</a>
+        <a href="test.php?page=accueil&idUser=<?= $user["idUser"] ?>" class="menu">Accueil</a>
+        <a href="test.php?page=module&idUser=<?= $user["idUser"] ?>" class="menu">les Modules</a>
+        <a href="test.php?page=cour&idUser=<?= $user["idUser"] ?>" class="menu">les Cours</a>
       </div>
       <div>
         <?= $user["name"] ?>, <?= $user["firstName"] ?>
