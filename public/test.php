@@ -13,16 +13,6 @@ $user = getUserById($pdo, $idUser);
 require_once __DIR__ . "/header.php";
 
 switch ($page) {
-    case "add_course":
-        if ($user["isAdmin"]) {
-            require_once __DIR__ . "/add_course.php";
-            break;
-        }
-    case "add_module":
-        if ($user["isAdmin"]) {
-            require_once __DIR__ . "/add_module.php";
-            break;
-        }
     case "accueil":
         if ($user["isAdmin"]) {
             require_once __DIR__ . "/apprenti.php";
