@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>DataFlow</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
     <content>
       <p class="titre" style="margin-top: 100px">Créer un module</p>
       <div class="choix">
