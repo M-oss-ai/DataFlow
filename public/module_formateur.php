@@ -17,7 +17,7 @@
           <option value="Module interne">Module interne</option>
           <option value="Module CFC">Module CFC</option>
         </select>
-      </div>$<p class="titre" style="margin-top: 100px">Créer un module</p>
+      </div><p class="titre" style="margin-top: 100px">Créer un module</p>
       <div class="choix">
         <label for="Nom">Nom</label>
         <textarea
