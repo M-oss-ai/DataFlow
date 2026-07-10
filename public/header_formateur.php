@@ -8,7 +8,7 @@
   <body>
     <header class="entete">
       <div>
-        <a href="/test.php?page=journal" class="menu">Accueil</a>
+        <a href="/test.php?page=apprenti" class="menu">Accueil</a>
         <a href="/test.php?page=add_module" class="menu">Ajouter un module</a>
         <a href="/test.php?page=module" class="menu">les Modules</a>
         <a href="/test.php?page=add_course" class="menu">Ajouter un Cours</a>

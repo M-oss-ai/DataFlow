@@ -13,7 +13,7 @@ $user = [
     "firstName" => "Bo",
     "password" => "123",
     "startYear" => 2025,
-    "isAdmin" => false,
+    "isAdmin" => true,
 ];
 
 if ($user["isAdmin"]) {
